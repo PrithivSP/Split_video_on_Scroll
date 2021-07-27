@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Split Video On Scroll effect</title>
+
+    <!-- link for CSS -->
+    <link rel="stylesheet" href="stylesheet.css">
+    <!-- Link for Font Family -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Yanone+Kaffeesatz&display=swap" rel="stylesheet">
+</head>
+<body>
+    <section>
+        <div class="slide" id="slide1">
+            <video src="NatureVideo.mp4" type="video/mp4" autoplay loop></video>
+        </div>
+        <div class="slide" id="slide2">
+            <video src="NatureVideo.mp4" type="video/mp4" autoplay loop></video>
+        </div>
+    </section>
+
+    <div class="content">
+        <h2>Split Video On Scroll effect</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit minima similique asperiores quibusdam fugiat, atque quaerat neque, quia consequatur minus voluptate corrupti natus vero ex excepturi, praesentium ipsum fugit reiciendis magnam dolorem doloremque laborum beatae. Quidem quia mollitia odit optio! Veritatis maxime rerum expedita in quos earum odit delectus omnis? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolorum consectetur dignissimos non facilis nam obcaecati voluptates sapiente tenetur quibusdam earum ea blanditiis quo doloribus, corporis cumque tempore minus officia eaque optio soluta. Fugiat cupiditate quaerat voluptas laboriosam placeat ratione adipisci vero qui eaque quod, veritatis veniam ab at impedit voluptates illum magni. Recusandae quisquam provident beatae dolore doloribus ad! Sunt, deserunt minus pariatur adipisci doloribus molestias alias excepturi repellat soluta sit dolor magnam ipsa rerum illo earum unde quae cum tempora. Aut aperiam neque voluptatem recusandae alias quo totam commodi eos magnam culpa, cupiditate impedit ipsa deleniti debitis deserunt nam.</p>
+    </div>
+  
+    <script>
+        let slide1 = document.getElementById('slide1');
+        let slide2 = document.getElementById('slide2');
+
+        window.addEventListener('scroll', function() {
+            slide1.style.left = -window.pageYOffset+ 'px';
+            slide2.style.left = window.pageYOffset+ 'px';
+        })
+    </script>
+</body>
+</html>
